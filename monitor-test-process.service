@@ -1,0 +1,8 @@
+[Unit]
+Description=Monitoring script for process 'test'
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/scripts/monitor-test-process.sh        # Путь к исполняемому файлу
+User=root
